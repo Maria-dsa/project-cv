@@ -1,0 +1,135 @@
+/* Section About */
+#About {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--secondary-color);
+    min-height: calc(100vh);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh- 3rem);
+
+}
+
+.pictureLuckyLuke {
+    background-image: url(../pictures/lucky_luke.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 25vh;
+    margin-bottom: 2rem;
+}
+
+.desktop_description h2 {
+    padding: 1.5rem;
+    color: var(--third-color);
+}
+
+.desktop_description p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding: 2.5rem;
+}
+
+.friendLuckyLuke {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.friendLuckyLuke img {
+    width: 25%;
+    height: 25%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 50%;
+    background-color: var(--fourth-color);
+}
+
+div.desktopfriendLL {
+    display: none;
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        min-height: calc(100-3rem);
+    }
+
+    .desktop_description {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        padding-right: 1rem;
+        padding-left: 3rem;
+        max-width: 50%;
+
+    }
+
+    .pictureLuckyLuke {
+        background-image: url(../pictures/lucky_luke.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 35vw;
+        height: 60vh;
+        margin-bottom: 1rem;
+
+    }
+
+    .desktop_description p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+
+    .desktop_description h2 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    div.friendLuckyLuke {
+        display: none;
+
+    }
+
+
+    div.desktopfriendLL {
+        display: flex;
+        justify-content: space-around;
+        height: 25vh;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    div.desktopfriendLL img {
+        object-fit: contain;
+        max-height: 100%;
+        width: auto;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 50%;
+        background-color: var(--fourth-color);
+
+    }
+
+    div.desktopfriendLL img:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+}

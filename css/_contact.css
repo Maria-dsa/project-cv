@@ -1,0 +1,174 @@
+#contact {
+  min-height: calc(100vh - 6rem);
+  border-style: dashed;
+  border-color: var(--primary-color);
+  border-width: thick;
+  background-color: var(--secondary-color);
+}
+
+#contact img {
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+}
+
+#contact h2 {
+  padding-top: 3rem;
+  color: var(--third-color);
+}
+
+@media screen and (min-width: 768px) {
+  .headerContact {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #contact img {
+    max-width: 40%;
+    max-height: 250px;
+    height: auto;
+    object-fit: contain;
+    margin-left: initial;
+  }
+
+  #contact h2 {
+    color: var(--third-color);
+    font-size: 4rem;
+    flex-basis: content;
+  }
+
+  form input,
+  button,
+  textarea {
+    font-size: 1.5rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  form {
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+}
+
+#contact form div {
+  width: clamp(10rem, 70vw, 100rem);
+}
+
+@media screen and (min-width: 768px) {
+  #contact div {
+    padding: 2rem;
+  }
+
+  #contact div.message {
+    box-shadow: 5px 0 5px -5px grey;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+#contact label {
+  display: block;
+  margin: calc(var(--spacing-xl)*2) 0 var(--spacing);
+}
+
+@media screen and (min-width: 768px) {
+  #contact label {
+    display: none;
+  }
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+
+  input[type=text],
+  input[type=email],
+  input[type=tel] {
+    border-width: 0 0 2px 0;
+    border-style: dotted;
+    border-color: rgb(129, 128, 128);
+    background: none;
+    border-radius: initial;
+    margin: 2rem auto;
+  }
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: var(--spacing);
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+@media screen and (min-width:768px) {
+  textarea {
+    flex-basis: 100%;
+  }
+}
+
+button {
+  width: 50%;
+  margin-left: 25%;
+  background-color: var(--fourth-color);
+  color: white;
+  padding: 14px 20px;
+  margin-top: var(--spacing-xl);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: var(--spacing-xl);
+}
+
+button:hover {
+  background-color: var(--third-color);
+}
+
+.merci {
+  padding: 1rem;
+  border-radius: 5%;
+  background-color: var(--fourth-color);
+  margin: 3rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.merci p {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.erreur {
+  padding: 2rem;
+  border-radius: 5%;
+  background-color: var(--third-color);
+  margin: 3rem;
+  color: var(--secondary-color);
+  text-align: center;
+
+}
+
+.erreur ul {
+  list-style: none;
+}

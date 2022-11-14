@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin:0rem;
+    padding:0rem;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family:'Lucky-Luke';
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Lucky-Luke';
+    letter-spacing: .2rem;
+    text-align: center;
+}

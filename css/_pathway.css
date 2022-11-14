@@ -1,0 +1,243 @@
+@media screen and (max-width: 1330px) {
+    #pathway .container-desktop {
+        display: none;
+    }
+
+    #pathway {
+        text-align: center;
+        background-color: var(--fiveth-color);
+        padding-top: 3rem;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+
+    }
+
+    .picto {
+        width: 9.375rem;
+        height: 9.375rem;
+        background-image: url(/pictures/sheriff-white.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.625rem;
+    }
+
+    #pathway ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .timeline-heading .timeline-badge {
+        background-image: url(/pictures/crosshair-target-interface.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 2.188rem;
+        height: 2.188rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.313rem;
+    }
+
+    .timeline-body p {
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .timeline-panel {
+        padding-top: 3.75rem;
+        padding-bottom: 9.688rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+        max-height: 100%;
+        max-width: 100%;
+
+    }
+
+    .timeline-panel-container,
+    .timeline-panel-container-inverted {
+
+        background-image: url(/pictures/chat-balloon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-height: 50vh;
+        min-width: 410px;
+        justify-content: center;
+
+    }
+
+    .timeline-panel-container-inverted {
+
+        background-image: url(/pictures/chat-balloon-inverted.png);
+        min-width: 390px;
+    }
+
+    .timeline-body {
+        line-height: 0.813rem;
+        margin-top: -0.125rem;
+        max-height: auto;
+        max-width: auto;
+        min-height: auto;
+        min-width: auto;
+    }
+
+    #pathway h2 {
+        color: var(--secondary-color);
+    }
+}
+
+@media screen and (min-width: 1330px) {
+    #pathway .container {
+        display: none;
+    }
+
+    #pathway {
+        background-color: var(--fiveth-color);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #pathway h2 {
+        font-size: 4rem;
+        color: var(--secondary-color);
+    }
+
+    #pathway h3 {
+        font-size: 2rem;
+        color: var(--third-color);
+    }
+
+    #pathway h4 {
+        font-size: 1.5rem;
+        color: var(--third-color);
+    }
+
+    .timeline-desktop {
+        padding-top: 4rem;
+    }
+
+    .picto-desktop {
+        margin-left: auto;
+        margin-right: auto;
+        width: 11.3rem;
+        height: 11.3rem;
+        background-image: url(/pictures/sheriff-white.png);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-heading-desktop {
+        background-image: url(/pictures/chat-balloon.png);
+        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 25rem;
+        height: 25rem;
+        text-align: center;
+        padding-top: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        grid-column: 2/3;
+
+    }
+
+    .timeline-heading-inverted-desktop {
+        background-image: url(/pictures/chat-balloon-inverted.png);
+        background-position: revert;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 25rem;
+        height: 25rem;
+        text-align: center;
+        padding-top: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        grid-column: 5/6;
+    }
+
+    .timeline-body-inverted-desktop {
+        grid-column: 2/5;
+    }
+
+    .timeline-badge-desktop {
+        background-image: url(/pictures/crosshair-target-interface.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 4rem;
+        height: 4rem;
+        margin-left: 7.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .timeline-panel-desktop {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(25rem, auto);
+        grid-gap: 3rem;
+        box-shadow: 5px 0 25px -5px var(--primary-color);
+        border-radius: 1.5rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
+        margin-bottom: 4rem;
+        background-color: var(--fourth-color);
+        opacity: 1;
+    }
+
+    .timeline-body-desktop {
+        grid-column: 3/6;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .wrapper-desktop {
+        border: 5px solid var(--primary-color);
+        border-radius: 30px;
+        margin-top: 5rem;
+        min-height: 10rem;
+        min-width: 20rem;
+        background-color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .wrapper-desktop p {
+        margin-top: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0rem;
+        text-align: center;
+    }
+
+    .panel1 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .panel2 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .panel3 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .panel4 {
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+}
